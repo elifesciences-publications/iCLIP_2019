@@ -1,13 +1,13 @@
 # iCLIP_2019
+
+### This code is associated with the paper from Lee et al., "Recruitment of mRNAs to P granules by condensation with intrinsically-disordered proteins". eLife, 2020. http://dx.doi.org/10.7554/eLife.52896
+
 ICLIP analysis for MEG-3 and PGL-1
 for trim_last2.py and trim_left3.py, there two file were orginaly written by Nejc Haberman from Ule lab.
 https://github.com/jernejule/non-coinciding_cDNA_starts
 
-
 by Sean Lee and Tu Lu
 ####Sometimes we found that there are null sequences information within sequencing reads. If there is a empty (null) sequence that prevent fastx_toolkits to work, Try to remove these sequences by doing the following.
-
-### This code is associated with the paper from Lee et al., "Recruitment of mRNAs to P granules by condensation with intrinsically-disordered proteins". eLife, 2020. http://dx.doi.org/10.7554/eLife.52896
 
 1. replace null character with "~": # example sequencing file named HNNM3BCXY_1_0_1.fastq
     sed -i.bak 's/\x0/~/g' HNNM3BCXY_1_0_1.fastq 
